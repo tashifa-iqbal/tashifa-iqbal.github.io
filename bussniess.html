@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Collaborations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Six+Caps&family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #0a0a0a;
+      color: #fff;
+    }
+
+    header {
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff007f;
+    }
+
+    .brand-work {
+      padding: 80px 10%;
+      text-align: center;
+    }
+
+    .brand-work h1 {
+      font-family: 'Six Caps', sans-serif;
+      font-size: 5rem;
+      letter-spacing: 6px;
+      margin-bottom: 50px;
+      background: linear-gradient(90deg, #ff007f, #7a5cff, #00d4ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .gallery-item {
+      background: rgba(255,255,255,0.05);
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-10px);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>MyPortfolio</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="view-my-work.html">Back to Work</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="brand-work">
+    <h1>Business Collaborations</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+        <img src="./IMG/NETZ BAY 1.png" alt="Design Work">
+      </div>
+      <div class="gallery-item">
+        <img src="./IMG/netzbay 2.png" alt="Design Work">
+      </div>
+      <div class="gallery-item">
+        <img src="./IMG/netzbay 3.png" alt="Design Work">
+      </div>
+      <div class="gallery-item">
+        <img src="./IMG/NETZ BAY 2.png" alt="Design Work">
+      </div>
+      <div class="gallery-item">
+        <img src="./IMG/HCAF 1.png" alt="Design Work">
+      </div>
+      <div class="gallery-item">
+        <img src="./IMG/HOMECARE 5.png" alt="Design Work">
+      </div>
+      <div class="gallery-item">
+        <img src="./IMG/HOMECARE 4.png" alt="Design Work">
+      </div>
+      <div class="gallery-item">
+        <img src="./IMG/Home Care Assistance of Jefferson County 2.png" alt="Design Work">
+      </div>
+      <div class="gallery-item">
+        <img src="./IMG/GES 1.png" alt="Design Work">
+      </div>
+      <div class="gallery-item">
+        <img src="./IMG/GES 2.png" alt="Design Work">
+      </div>
+      <div class="gallery-item">
+        <img src="./IMG/1.png" alt="Design Work">
+      </div>
+      <div class="gallery-item">
+        <img src="./IMG/2.png" alt="Design Work">
+      </div>
+      <!-- Add more works -->
+    </div>
+  </section>
+
+</body>
+</html>
