@@ -57,96 +57,109 @@
       color: #ff007f;
     }
 
-    /* HERO SECTION */
-    .hero {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background: url("./IMG/1797ea81-8c21-4f17-be73-e4553a8f5b58.png") center/cover no-repeat;
-      position: relative;
-      overflow: hidden;
-    }
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: linear-gradient(120deg, rgba(42,13,74,0.6), rgba(13,13,13,0.8), rgba(255,0,127,0.4));
-      background-size: 300% 300%;
-      animation: gradientMove 8s ease infinite;
-      z-index: 1;
-    }
+  /* 👇 Background image */
+  background: url("./IMG/1797ea81-8c21-4f17-be73-e4553a8f5b58.png") center/cover no-repeat;
 
-    @keyframes gradientMove {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
+  position: relative;
+  overflow: hidden;
+}
 
-    .hero h1 {
-      font-family: 'Six Caps', sans-serif;
-      font-size: 10rem;
-      font-weight: 400;
-      letter-spacing: 8px;
-      background: linear-gradient(90deg, #fff, #ff007f, #7a5cff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      position: relative;
-      z-index: 2;
-      opacity: 0;
-      transform: translateY(30px);
-      animation: fadeSlide 1.5s ease forwards;
-      animation-delay: 0.5s;
-    }
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
 
-    @keyframes fadeSlide {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+  /* 👇 Overlay effect */
+  background: linear-gradient(
+    120deg, 
+    rgba(42,13,74,0.6), 
+    rgba(13,13,13,0.8), 
+    rgba(255,0,127,0.4)
+  );
+  background-size: 300% 300%;
+  animation: gradientMove 8s ease infinite;
+  z-index: 1;
+}
 
-    .hero h1::after {
-      content: "PORTFOLIO";
-      position: absolute;
-      top: 0; left: 50%;
-      transform: translateX(-50%);
-      font-family: 'Six Caps', sans-serif;
-      font-size: 10rem;
-      font-weight: 400;
-      letter-spacing: 8px;
-      background: linear-gradient(90deg, #ff007f, #7a5cff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      filter: blur(40px);
-      opacity: 0.5;
-      z-index: -1;
-    }
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
-    .hero .cta {
-      margin-top: 20px;
-      padding: 15px 35px;
-      font-size: 1.2rem;
-      font-weight: 600;
-      color: #fff;
-      border: 2px solid #ff007f;
-      border-radius: 50px;
-      background: transparent;
-      cursor: pointer;
-      position: relative;
-      z-index: 2;
-      transition: all 0.3s ease;
-    }
+.hero h1 {
+  font-family: 'Six Caps', sans-serif;
+  font-size: 10rem;
+  font-weight: 400;
+  letter-spacing: 8px;
+  background: linear-gradient(90deg, #fff, #ff007f, #7a5cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlide 1.5s ease forwards;
+  animation-delay: 0.5s;
+}
 
-    .hero .cta:hover {
-      background: #ff007f;
-      color: #fff;
-      box-shadow: 0px 0px 20px #ff007f;
-      transform: scale(1.05);
-    }
+@keyframes fadeSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero h1::after {
+  content: "PORTFOLIO";
+  position: absolute;
+  top: 0; 
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Six Caps', sans-serif;
+  font-size: 10rem;
+  font-weight: 400;
+  letter-spacing: 8px;
+  background: linear-gradient(90deg, #ff007f, #7a5cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: blur(40px);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.hero .cta {
+  margin-top: 20px;
+  padding: 15px 35px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  border: 2px solid #ff007f;
+  border-radius: 50px;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.hero .cta:hover {
+  background: #ff007f;
+  color: #fff;
+  box-shadow: 0px 0px 20px #ff007f;
+  transform: scale(1.05);
+}
 
     /* ABOUT SECTION */
     .about {
@@ -342,12 +355,12 @@
     </nav>
   </header>
 
-  <!-- HERO -->
-  <section id="hero" class="hero">
-    <div>
-      <h1>PORTFOLIO</h1>
-      <a href="view my work.html" class="cta"><span>VIEW MY WORK</span></a>
-    </div>
+<!-- HERO -->
+<section id="hero" class="hero">
+  <div>
+    <h1>PORTFOLIO</h1>
+    <a href="view my work.html" class="cta"><span>VIEW MY WORK</span></a>
+  </div>
   </section>
 
   <!-- ABOUT -->
@@ -396,4 +409,5 @@
 
 </body>
 </html>
+
 
