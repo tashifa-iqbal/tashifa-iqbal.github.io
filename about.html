@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Tashifa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Six+Caps&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0a0a0a;
+      color: #fff;
+    }
+
+    header {
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.7);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff007f;
+    }
+
+    .about-hero {
+      text-align: center;
+      padding: 80px 10%;
+    }
+
+    .about-hero h1 {
+      font-family: 'Six Caps', sans-serif;
+      font-size: 6rem;
+      margin-bottom: 10px;
+      letter-spacing: 5px;
+      background: linear-gradient(90deg, #fff, #ff007f, #7a5cff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .about-hero p {
+      font-size: 1.2rem;
+      color: #bbb;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .experience, .skills {
+      padding: 60px 10%;
+    }
+
+    .experience h2, .skills h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #ff007f;
+    }
+
+    .experience ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .experience li {
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .skill {
+      background: rgba(255,255,255,0.05);
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .skill:hover {
+      transform: translateY(-10px);
+    }
+
+    .skill h3 {
+      margin: 10px 0;
+      font-size: 1.2rem;
+    }
+
+    .highlight {
+      border: 2px solid #ff007f;
+      background: rgba(255,0,127,0.1);
+    }
+
+    .cta {
+      text-align: center;
+      padding: 60px 10%;
+    }
+
+    .cta a {
+      display: inline-block;
+      padding: 12px 25px;
+      margin: 10px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(90deg, #ff007f, #7a5cff);
+      transition: 0.3s;
+    }
+
+    .cta a:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h2>MyPortfolio</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="viewmywork.html">My Work</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="about-hero">
+    <h1>About Me</h1>
+    <p>Hi, I’m <strong>Tashifa</strong>, a Graphic & Web Designer passionate about creating visually stunning and user-friendly designs that bring ideas to life.</p>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>Blue Moon Boston (UAE)</strong> – Graphic Designer (Nov – Feb)</li>
+      <li><strong>Logic Design</strong> – Graphic Designer (Mar – Present)</li>
+      <li><strong>US Brand Booster</strong> – Graphic Designer (Present)</li>
+    </ul>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill highlight">
+        <h3>Photoshop</h3>
+        <p>Expert in photo editing, manipulation, and creative visuals.</p>
+      </div>
+      <div class="skill highlight">
+        <h3>Illustrator</h3>
+        <p>Professional in vector design, branding, and illustrations.</p>
+      </div>
+      <div class="skill">
+        <h3>Figma</h3>
+        <p>UI/UX design and interactive prototyping for modern web apps.</p>
+      </div>
+      <div class="skill">
+        <h3>Front-End Development</h3>
+        <p>Building responsive websites using HTML, CSS, and JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="cta">
+    <h2>Let’s Work Together!</h2>
+    <a href="view my work.html">View My Work</a>
+    <a href="contact.html">Contact Me</a>
+  </section>
+
+</body>
+</html>
