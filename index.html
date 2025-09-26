@@ -57,7 +57,7 @@
       color: #ff007f;
     }
 
-/* HERO SECTION */
+    /* HERO SECTION */
     .hero {
       height: 100vh;
       display: flex;
@@ -88,7 +88,7 @@
 
     .hero h1 {
       font-family: 'Six Caps', sans-serif;
-      font-size: 10rem; /* bigger for impact */
+      font-size: 10rem;
       font-weight: 400;
       letter-spacing: 8px;
       background: linear-gradient(90deg, #fff, #ff007f, #7a5cff);
@@ -239,6 +239,92 @@
       transform: translateY(-10px);
       background: rgba(255,255,255,0.1);
     }
+
+    /* ---------------- RESPONSIVE CODE ---------------- */
+    @media (max-width: 1024px) {
+      .hero h1,
+      .hero h1::after {
+        font-size: 6rem;
+        letter-spacing: 5px;
+      }
+
+      .about {
+        gap: 30px;
+      }
+
+      .about img {
+        width: 280px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 15px 5%;
+      }
+
+      nav ul {
+        gap: 15px;
+      }
+
+      .hero h1,
+      .hero h1::after {
+        font-size: 4.5rem;
+        letter-spacing: 3px;
+      }
+
+      .about {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 5%;
+      }
+
+      .about img {
+        width: 250px;
+      }
+
+      .about-text h2 {
+        font-size: 2.2rem;
+      }
+
+      .capabilities h2,
+      .experience h2 {
+        font-size: 2.2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h2 {
+        font-size: 1.2rem;
+      }
+
+      nav ul {
+        display: none; /* mobile menu can be added later */
+      }
+
+      .hero h1,
+      .hero h1::after {
+        font-size: 3rem;
+        letter-spacing: 2px;
+      }
+
+      .hero .cta {
+        padding: 10px 20px;
+        font-size: 1rem;
+      }
+
+      .about img {
+        width: 200px;
+      }
+
+      .about-text p {
+        font-size: 1rem;
+      }
+
+      .capabilities h2,
+      .experience h2 {
+        font-size: 1.8rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -256,15 +342,13 @@
     </nav>
   </header>
 
-<!-- HERO -->
-<section id="hero" class="hero">
-  <div>
-    <h1>PORTFOLIO</h1>
-    <!-- Link button to new page -->
-    <a href="view my work.html" class="cta"><span>VIEW MY WORK</span></a>
-  </div>
-</section>
-
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div>
+      <h1>PORTFOLIO</h1>
+      <a href="view my work.html" class="cta"><span>VIEW MY WORK</span></a>
+    </div>
+  </section>
 
   <!-- ABOUT -->
   <section id="about" class="about">
@@ -312,5 +396,3 @@
 
 </body>
 </html>
-
-
