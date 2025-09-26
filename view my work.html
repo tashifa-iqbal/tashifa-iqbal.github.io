@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Work</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Six+Caps&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0a0a0a;
+      color: #fff;
+    }
+
+    header {
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff007f;
+    }
+
+    .work-section {
+      padding: 80px 10%;
+      text-align: center;
+    }
+
+    .work-section h1 {
+      font-family: 'Six Caps', sans-serif;
+      font-size: 5rem;
+      letter-spacing: 5px;
+      margin-bottom: 50px;
+      background: linear-gradient(90deg, #fff, #ff007f, #7a5cff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .gallery-item {
+      background: rgba(255,255,255,0.05);
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-10px);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      display: block;
+    }
+
+    .gallery-item h3 {
+      margin: 15px;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h2>MyPortfolio</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="viewmywork.html">My Work</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- WORK SECTION -->
+  <section class="work-section">
+    <h1>MY WORK</h1>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="./IMG/STORY TELLING.png" alt="Project 1">
+        <h3>Poster Design</h3>
+      </div>
+      <div class="gallery-item">
+        <img src="./IMG/strategy.png" alt="Project 2">
+        <h3>Poster Design</h3>
+      </div>
+      <div class="gallery-item">
+        <img src="./IMG/tld.png" alt="Project 3">
+        <h3>TLD Designs</h3>
+      </div>
+            <div class="gallery-item">
+        <img src="./IMG/usbb.png" alt="Project 3">
+        <h3>USBB Designs</h3>
+      </div>
+      <!-- Add more items here -->
+    </div>
+  </section>
+
+</body>
+</html>
