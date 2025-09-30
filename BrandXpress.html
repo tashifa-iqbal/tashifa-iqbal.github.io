@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brand Xpress - Portfolio</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #121212;
+      color: #d1d1d1;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: rgba(18,18,18,0.95);
+      padding: 20px 10%;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    header .logo { color: #00adb5; font-weight: bold; font-size: 1.5em; }
+    header nav a {
+      margin-left: 20px; color: #d1d1d1; text-decoration: none; transition: 0.3s;
+    }
+    header nav a:hover { color: #00adb5; }
+
+    .content {
+      padding: 60px 10%;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #00adb5;
+      margin-bottom: 20px;
+    }
+    .gallery-item {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0,173,181,0.3);
+    }
+    .gallery-item img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+    .gallery-item h3 {
+      font-size: 1.5em;
+      color: #eee;
+    }
+    .gallery-item p {
+      font-size: 1.05em;
+      margin-top: 10px;
+      opacity: 0.9;
+    }
+    .back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 20px;
+      background: #00adb5;
+      color: #121212;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .back-btn:hover {
+      background: #00949b;
+      box-shadow: 0 0 15px #00adb5;
+    }
+    footer {
+      text-align: center; padding: 20px; margin-top: 60px;
+      font-size: 0.9em; opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">TASHIFA IQBAL</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- CONTENT -->
+  <div class="content">
+    <h1>Brand Xpress</h1>
+    <div class="gallery-item">
+      <img src="./IMG/adorn robot.png" alt="Brand Xpress Design">
+      <h3>Dynamic Branding & Creative Visuals</h3>
+      <p>Brand Xpress is a visual identity project crafted to showcase bold creativity, expressive design,
+         and a forward-thinking approach to branding. The visuals combine clean typography, powerful color
+         contrasts, and sleek layouts that capture attention and communicate brand values instantly.</p>
+    </div>
+    <a href="index.html#projects" class="back-btn">← Back to Projects</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    © <span id="year"></span> TASHIFA IQBAL — Built with ❤️
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
